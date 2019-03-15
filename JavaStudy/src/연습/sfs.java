@@ -1,16 +1,21 @@
 package 연습;
 
+import java.util.Scanner;
+
 public class sfs { 
 	 public static void main(String[] args) {
-		 int sum = 0;
-		 for(int i = 1; i <= 10; i++) {
-		 if(i % 2 != 0) {
-		 sum += i; // sum = sum + i;
-		 System.out.print("i의 값 => " + i);
-		 System.out.println(" sum의 값 => " + sum);
-		 }
-		 }
-		 System.out.println("최종 sum의 값 => " + sum);
+		 int score = 0;
+
+		 System.out.print("숫자 입력 > ");
+
+		 Scanner scan = new Scanner(System.in);
+		 score = scan.nextInt();
+
+		 char grade = score >= 90 ? 'A' : (score >= 80 ? 'B' : 'C') ;
+
+		 System.out.println(grade);
+
+		 scan.close();
 		 }
 
 

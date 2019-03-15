@@ -13,6 +13,7 @@ public class Exam5_2 {
 				arr[i] = i + 10; // 10 12 14 16 18
 				if(arr[i]>0) {
 				sum += arr[i];
+//				sum = sum +arr[i]
 				count++;
                   			}
 		}
